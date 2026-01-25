@@ -1,10 +1,10 @@
-# **CEGA-Net:A Lightweight Approach for Rainfall Opportunistic Sensing**
+# **CIEGA-Net:A Lightweight Approach for Rainfall Opportunistic Sensing**
 
 ## **Abstract**
 
 Video-image-based rainfall measurement is one of the frontier research directions in opportunistic rainfall sensing. It can be generally summarized into two tightly coupled stages:  (1) **rain-streak information extraction**, in which the motion blur of raindrops in imaging is characterized as rain streaks; and  (2) **rainfall intensity estimation**,which maps the extracted rain-streak features to rainfall intensity.
 
-However, under limited computational resources and constrained processing environments, achieving a balance between computational efficiency and measurement accuracy remains a key challenge in opportunistic rainfall sensing. To address this issue, we propose a lightweight machine-learning approach based on image enhancement and progressive fusion, termed the **Coupled Image Enhancement and Gradual Aggregation Network (CEGA-NET)**, for rainfall estimation.
+However, under limited computational resources and constrained processing environments, achieving a balance between computational efficiency and measurement accuracy remains a key challenge in opportunistic rainfall sensing. To address this issue, we propose a lightweight machine-learning approach based on image enhancement and progressive fusion, termed the **Coupled Image Enhancement and Gradual Aggregation Network (CIEGA-NET)**, for rainfall estimation.
 
 Specifically, we adopt the progressive temporal fusion strategy proposed by [(Xue et al., ICASSP 2021)](https://ieeexplore.ieee.org/document/9413698):multiple groups of video frames are first coarsely fused to aggregate temporal information, followed by a finer fusion of the coarsely extracted features for rain-streak information extraction. Benefiting from this strategy, the proposed method achieves high computational efficiency while maintaining strong extraction accuracy. In particular, the model demonstrates superior performance in heavy-rain scenarios with severe hazards, effectively alleviating the long-standing trade-off between computational efficiency and measurement accuracy in opportunistic rainfall sensing.
 
@@ -55,3 +55,4 @@ For train the model:
 For test the model:
 
 > python model_test.py
+
